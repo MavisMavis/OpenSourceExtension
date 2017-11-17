@@ -18,9 +18,7 @@ class NavigateCollectionUI {
     this.containerEl.querySelector("button.delete").onclick = this.onDelete;
     this.containerEl.querySelector("input.image-filter").onchange = this.onFilterUpdated;
 
-    //edited
-    this.containerEl.querySelector("select.select-number").onchange = this.onSelect;
-    
+
     // Load the stored image once the component has been rendered in the page.
     this.onFilterUpdated();
   }
@@ -82,36 +80,6 @@ class NavigateCollectionUI {
       thumbnailsUl.appendChild(li);
     });
   }
-
-  /* edit */
- 
-   get optionValue() {
-     return this.containerEl.querySelector("select.select-number").value;
-   }
- 
-   set optionValue(value) {
-     return this.containerEl.querySelector("select.select-number").value = value;
-   }
- 
-   onSelect(){
-     const {storedImages} = this.state;
-     storedImages.forEach(({storedName}) => {
-       const onClickedImage = () => {
-         this.optionValue = storedName;
-       };
-       var select = document.getElementById("selectNumber");
-       
-       select.onselect = onClickedImage;
-       var el = document.createElement("option");
-       el.setAttribute("id", storedName);
-       el.textContent = opt;
-       el.value = opt;
-       select.appendChild(el);
-       
- 
-    
-     });
-    }
 }
 
 // eslint-disable-next-line no-unused-vars

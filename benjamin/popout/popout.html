@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Fearch</title>
+    <link href="css/popout.css" rel="stylesheet" type="text/css">
+    <script src="js/popout.js"></script>
+</head>
+
+<body>
+<div id = "content">
+    <div id="header">
+        <h1>
+            <span style="color:#6c33ac">SSearch</span>
+        </h1>
+    </div>
+    <div id="main">
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <div id="searchBox" class="search">
+                            <input type="text" name="songname" id="query" placeholder="Enter Search Here" />
+                            <button id="searchButton">
+                                <img src="images/searchIcon.png" alt="Search" id="searchIcon">
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="searchWarning" style="display: none;">
+                            &#9762 Please enter search query.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="chkmusic">
+                        <label for="music" title="Ctrl+Alt+m" style="color:#6c33ac"><b>Music</b></label>
+                        <input type="checkbox" id="chkvideo">
+                        <label for="video" title="Ctrl+Alt+v" style="color:#6c33ac"><b>Video</b></label>
+                        <input type="checkbox" id="chkbooks">
+                        <label for="books" title="Ctrl+Alt+b" style="color:#6c33ac"><b>Books</b></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="checkboxWarning" style="display: none;">
+                            &#9762 Please select one or more of the checkboxes.
+                        </div>
+                    </td>
+                </tr>
+                </table>
+        </form>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+</body>
+</html>
