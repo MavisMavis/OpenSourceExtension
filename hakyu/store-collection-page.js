@@ -18,9 +18,10 @@ class NavigateCollectionUI {
     this.containerEl.querySelector("button.delete").onclick = this.onDelete;
     this.containerEl.querySelector("input.image-filter").onchange = this.onFilterUpdated;
 
+
     //edited
     this.containerEl.querySelector("select.select-number").onchange = this.onSelect;
-    
+
     // Load the stored image once the component has been rendered in the page.
     this.onFilterUpdated();
   }
@@ -83,6 +84,7 @@ class NavigateCollectionUI {
     });
   }
 
+
   /* edit */
  
    get optionValue() {
@@ -112,6 +114,7 @@ class NavigateCollectionUI {
     
      });
     }
+
 }
 
 // eslint-disable-next-line no-unused-vars
