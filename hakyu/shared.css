@@ -17,7 +17,7 @@ ul.thumbnails li {
   background: rgba(255,0,0,0.4);
 }
 
-.success {
+.success { /*when image success load the selected color */
   background: rgba(0,255,0,0.4);
 }
 #textnav { /* title and placeholder display center */

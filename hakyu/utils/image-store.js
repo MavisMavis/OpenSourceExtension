@@ -36,18 +36,3 @@ async function removeStoredImages(storedImages) {
   }
 }
 
-
-
- //edit
- async function loadCollectionName() {
-    const getName = await IDBFiles.getFileStorage({name: "stored-images"});
-  
-    
-    for (const storedName of imagesList) {
-      const blob = await imagesStore.get(storedName);
-  
-      storedImages.push({storedName, blobUrl: URL.createObjectURL(blob)});
-    }
-    return getName;
-  } 
-
