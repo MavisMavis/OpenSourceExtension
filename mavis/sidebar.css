@@ -363,8 +363,7 @@ body{
 	width:12px;
 	display:block;
 	margin-bottom:-10px;
-}
-=======
+}=======
 
 .light:root {
 	--background-color:#f5f6f7;
@@ -731,7 +730,6 @@ body{
 	display:block;
 	margin-bottom:-10px;
 }
-
 .light:root {
 	--background-color:#f5f6f7;
 	--background-hover:#0c0c0d1a;
@@ -1097,5 +1095,4 @@ body{
 	display:block;
 	margin-bottom:-10px;
 }
-
 
